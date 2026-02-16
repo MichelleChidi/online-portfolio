@@ -1,0 +1,185 @@
+:root {
+  /* Fonts */
+  --default-font: "Inter";
+  --dev-font: "ibm-plex-mono";
+  --hand-written-font: "Mogra";
+  --art-font: "Irish Grover";
+
+  /* Colors */
+  --color-main: #f28123;
+  --color-portfolio: #e9582b;
+  --color-art: #428880;
+
+  --color-main-dark: #da711b;
+  --color-portfolio-dark: #c85029;
+  --color-art-dark: #316e67;
+
+  --color-highlight: #ffe870;
+  --color-white: #fff;
+  --color-black: #000;
+
+  --color-text-dark: #252525;
+  --color-text-light: #525252;
+
+  /* sizes */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 20px;
+  --s-6: 24px;
+  --s-7: 28px;
+  --s-8: 32px;
+  --s-9: 36px;
+  --s-10: 40px;
+  --s-11: 44px;
+  --s-12: 48px;
+  --s-13: 52px;
+  --s-17: 68px;
+  --s-20: 80px;
+
+  /* font-sizes */
+  --fs-sm: clamp(1rem, 0.8vw, 1.125rem);
+  --fs-md: clamp(1.5rem, 1vw, 1.75rem);
+  --fs-lg: clamp(2rem, 2vw, 3rem);
+  --fs-xl: clamp(4rem, 4vw, 5.25rem);
+
+  --logo-height: 80px;
+}
+
+@font-face {
+  font-family: "ibm-plex-mono";
+  src:
+    url("../fonts/ibm-plex-mono/IBMPlexMono-Regular.woff2") format("woff2"),
+    url("../fonts/ibm-plex-mono/IBMPlexMono-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ibm-plex-mono";
+  src:
+    url("../fonts/ibm-plex-mono/IBMPlexMono-Bold.woff2") format("woff2"),
+    url("../fonts/ibm-plex-mono/IBMPlexMono-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mogra";
+  src:
+    url("../fonts/mogra/Mogra-Regular.woff2") format("woff2"),
+    url("../fonts/mogra/Mogra-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mogra";
+  src:
+    url("../fonts/mogra/Mogra-Regular.woff2") format("woff2"),
+    url("../fonts/mogra/Mogra-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Irish Grover";
+  src:
+    url("../fonts/irish-grover/Irish-Grover-Regular.woff") format("woff2"),
+    url("../fonts/irish-grover/Irish-Grover-Regular.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter/Inter-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  font-size: clamp(16px, 1.1vw, 18px);
+  height: 100%;
+
+  * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: var(--color-text-dark);
+  }
+}
+
+body {
+  --grid-color: rgba(0, 0, 0, 0.05);
+  --grid-size: var(--s-11);
+  background:
+    linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
+  background-size: var(--grid-size) var(--grid-size);
+  font-family: var(--default-font), sans-serif;
+  font-weight: 380;
+  height: 100%;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  position: relative;
+}
+
+a[title]:hover::after {
+  content: attr(title);
+  position: absolute;
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.page-content {
+  display: flex;
+  height: 100%;
+  flex-direction: row-reverse;
+}
+
+#app {
+  width: 100%;
+}
