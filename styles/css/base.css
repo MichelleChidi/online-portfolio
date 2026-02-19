@@ -21,6 +21,8 @@
   --color-text-dark: #252525;
   --color-text-light: #525252;
 
+  --color-bg-dark: #333;
+
   /* sizes */
   --s-1: 4px;
   --s-2: 8px;
@@ -155,11 +157,17 @@ a {
   position: relative;
 }
 
-a[title]:hover::after {
-  content: attr(title);
+a[data-tooltip]:hover::after,
+a[data-tooltip]:focus::after {
+  content: attr(data-tooltip);
   position: absolute;
   background: var(--color-black);
   color: var(--color-white);
+
+  display: block;
+  padding: var(--s-2);
+  font-weight: bold;
+  border-radius: var(--s-1);
 }
 
 .visually-hidden {
@@ -182,4 +190,20 @@ a[title]:hover::after {
 
 #app {
   width: 100%;
+}
+
+.skip {
+  position: absolute;
+  top: -44px;
+  left: 10px;
+  background-color: var(--color-bg-dark);
+  color: var(--color-white);
+  padding: var(--s-2);
+  text-decoration: none;
+  z-index: 999;
+  transition: top 0.3s;
+}
+
+.skip:focus {
+  top: 0;
 }
