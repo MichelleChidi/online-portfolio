@@ -8,5 +8,9 @@
   "css": {
     "/": "../styles/css/home.css",
     "/home": "../styles/css/home.css"
+  },
+  "js": {
+    "/": "../js/home.js",
+    "/home": "../js/home.js"
   }
 }
