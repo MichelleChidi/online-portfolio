@@ -2,7 +2,7 @@
   transform: rotate(-16.06deg);
 }
 
-.hand-written {
+#hand-written-header {
   display: inline-block;
   font-family: var(--hand-written-font);
   font-size: var(--fs-xl);
@@ -106,4 +106,8 @@
 
 .platforms {
   margin-block-start: var(--s-3);
+
+  a {
+    text-decoration: none;
+  }
 }

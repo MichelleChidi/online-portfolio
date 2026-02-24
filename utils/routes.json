@@ -2,15 +2,20 @@
   "pages": {
     "/": "../pages/home.html",
     "/home": "../pages/home.html",
-    "/portfolio": "pages/portfolio.html",
-    "/art-dabbles": "pages/art-dabbles.html"
+    "/portfolio": "../pages/portfolio.html",
+    "/art-dabbles": "../pages/art-dabbles.html",
+    "/design-system": "../pages/case-studies/design-system.html"
   },
   "css": {
-    "/": "../styles/css/home.css",
-    "/home": "../styles/css/home.css"
+    "/": "../styles/css/pages/home.css",
+    "/home": "../styles/css/pages/home.css",
+    "/portfolio": "../styles/css/pages/portfolio.css",
+    "/design-system": "../styles/css/pages/case-studies/design-system.css"
   },
   "js": {
-    "/": "../js/home.js",
-    "/home": "../js/home.js"
+    "/": "../js/pages/home.js",
+    "/home": "../js/pages/home.js",
+    "/portfolio": "../js/pages/portfolio.js",
+    "/design-system": "../js/pages/case-studies/design-system.js"
   }
 }

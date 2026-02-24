@@ -1,0 +1,135 @@
+.page-line {
+  .line {
+    background: var(--color-portfolio);
+  }
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-inline: var(--s-10);
+  padding-block: var(--s-20);
+  row-gap: var(--s-20);
+}
+
+.about {
+  max-width: 650px;
+  flex: 1 1 400px;
+}
+
+.contact-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+
+  .contact-info {
+    display: flex;
+    gap: var(--s-2);
+  }
+}
+
+.work-experience-heading {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 150%;
+  gap: var(--s-4);
+}
+
+.work-experience-content {
+  color: var(--color-text-light);
+}
+
+.case-studies {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  width: 100%;
+
+  .case-study {
+    position: relative;
+  }
+
+  .case-study.multiple {
+    display: flex;
+  }
+}
+
+.board {
+  align-items: center;
+  display: flex;
+  height: 560px;
+  padding-inline: var(--s-12);
+  width: 80%;
+}
+
+.post-it {
+  box-shadow: var(--shadow-default);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 420px;
+  padding: var(--s-10);
+  position: absolute;
+  text-decoration: none;
+  width: 420px;
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+  .subtitle {
+    color: var(--color-text-light);
+  }
+}
+
+.post-it:hover {
+  .post-it-btn {
+    gap: var(--s-8);
+  }
+}
+
+.bg-yellow {
+  background: var(--color-bg-yellow-100);
+}
+
+.bg-blue {
+  background: var(--color-bg-blue-100);
+}
+
+.bg-magenta {
+  background: var(--color-bg-magneta-100);
+}
+
+.bg-red {
+  background: var(--color-bg-red-100);
+}
+
+.bg-green {
+  background: var(--color-bg-green-100);
+}
+
+.board.bg-red {
+  margin-block-start: 60px;
+}
+
+.post-it.bg-blue {
+  right: 0;
+}
+
+.post-it.bg-green {
+  bottom: 0;
+  left: 50%;
+}
+
+.post-it-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 150%;
+}
