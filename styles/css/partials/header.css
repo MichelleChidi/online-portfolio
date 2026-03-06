@@ -48,8 +48,7 @@
     .draw-line {
       position: absolute;
       z-index: 1;
-      inset: -100% 0px;
-      /* inset: -60px -50px; */
+      inset: -100% 0;
       pointer-events: none;
       transform: rotate(16.06deg);
     }
@@ -60,8 +59,7 @@
     .draw-line {
       position: absolute;
       z-index: 1;
-      /* inset: -40px -50px; */
-      inset: calc(-100% + 32px) 0px;
+      inset: calc(-100% + 32px) 0;
       pointer-events: none;
       transform: rotate(16.06deg);
     }

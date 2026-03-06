@@ -7,8 +7,6 @@ fetch("../partials/mobile-menu.html")
     console.error("Failed to load menu:", err);
   });
 
-//   nav-button
-
 document.addEventListener("click", (e) => {
   const link = e.target.closest("button[data-nav-button]");
   if (!link) return;

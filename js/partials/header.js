@@ -1,16 +1,5 @@
 import "../../styles/css/partials/header.css";
 
-//  width="400"
-//   height="195"
-//   viewBox="0 0 400 195"
-
-//  width="350"
-//       height="132"
-//       viewBox="0 0 400 195"
-
-//  width="300"
-//         height="114"
-//         viewBox="0 0 400 195"
 export function render() {
   return `
    <h1 id="hand-written-header">
