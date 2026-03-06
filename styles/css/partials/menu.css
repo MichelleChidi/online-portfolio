@@ -2,7 +2,7 @@
   background: var(--white);
   display: flex;
   height: 100%;
-  padding-inline-end: var(--s-6);
+  padding-inline-end: var(--s-4);
 
   .menu-tabs {
     li {
@@ -27,7 +27,7 @@
   }
 
   .menu-text {
-    font-size: var(--fs-md);
+    font-size: 1.2rem;
     font-weight: 700;
     margin-inline-start: var(--s-4);
     text-align: center;
@@ -53,7 +53,7 @@
   }
 }
 
-#menu:has(+ #app .page-home) .nav-menu {
+#menu .nav-menu {
   &::before {
     content: "";
     position: relative;
@@ -61,9 +61,14 @@
     top: 0;
     bottom: 0;
     width: 1px;
-    background: var(--color-main-dark);
     height: 100%;
     display: block;
+  }
+}
+
+#menu:has(~ #app .page-home) .nav-menu {
+  &::before {
+    background: var(--color-main);
   }
 
   .home-link {
@@ -75,11 +80,18 @@
 
   .portfolio-link,
   .art-link {
-    border-left: 1px solid var(--color-main-dark);
+    border-left: 1px solid var(--color-main);
   }
 }
 
-#menu:has(+ #app .page-portfolio) .nav-menu {
+#menu:has(~ #app .page-portfolio) .nav-menu,
+#menu:has(~ #app .page-portfolio-dev) .nav-menu,
+#menu:has(~ #app .page-design-system) .nav-menu,
+#menu:has(~ #app .page-website-redesign) .nav-menu {
+  &::before {
+    background: var(--color-portfolio);
+  }
+
   .portfolio-link {
     border-left: 1px solid var(--color-portfolio);
     padding-block: var(--s-4);
@@ -88,7 +100,11 @@
   }
 }
 
-#menu:has(+ #app .page-art) .nav-menu {
+#menu:has(~ #app .page-art-dabbles) .nav-menu {
+  &::before {
+    background: var(--color-art);
+  }
+
   .art-link {
     border-left: 1px solid var(--color-art);
     padding-block: var(--s-4);

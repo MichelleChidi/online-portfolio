@@ -3,10 +3,8 @@
 }
 
 #hand-written-header {
-  display: inline-block;
   font-family: var(--hand-written-font);
   font-size: var(--fs-xl);
-  font-weight: 400;
   line-height: 1.2;
 
   .name {
@@ -28,6 +26,7 @@
     font-size: var(--fs-lg);
     font-weight: 700;
     margin-block-end: var(--s-1);
+    outline: none;
     width: fit-content;
   }
 
@@ -37,7 +36,7 @@
     .draw-line {
       position: absolute;
       z-index: 1;
-      inset: -90px 0px;
+      inset: calc(-100% - 52px) 0px;
       pointer-events: none;
       transform: rotate(16.06deg);
     }
@@ -49,7 +48,8 @@
     .draw-line {
       position: absolute;
       z-index: 1;
-      inset: -50px 0px;
+      inset: -100% 0px;
+      /* inset: -60px -50px; */
       pointer-events: none;
       transform: rotate(16.06deg);
     }
@@ -60,7 +60,8 @@
     .draw-line {
       position: absolute;
       z-index: 1;
-      inset: -30px 0px;
+      /* inset: -40px -50px; */
+      inset: calc(-100% + 32px) 0px;
       pointer-events: none;
       transform: rotate(16.06deg);
     }
@@ -92,6 +93,13 @@
   stroke: currentColor;
 }
 
+.nav-link:focus-visible {
+  .menu-text {
+    outline: var(--s-1) solid currentColor;
+    outline-offset: var(--s-3);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .draw-line path {
     transition: none;
@@ -109,5 +117,36 @@
 
   a {
     text-decoration: none;
+    white-space: nowrap;
+  }
+}
+
+.page-portfolio {
+  .art-portfolio-link {
+    display: none;
+  }
+
+  .nav-link:not(:hover) ~ .designer-portfolio-link .draw-line path {
+    stroke-dashoffset: 0 !important;
+    stroke: currentColor;
+  }
+}
+
+.page-portfolio-dev {
+  .art-portfolio-link {
+    display: none;
+  }
+
+  .dev-portfolio-link .draw-line path {
+    stroke-dashoffset: 0 !important;
+    stroke: currentColor;
+  }
+
+  .nav-links:has(.designer-portfolio-link:hover)
+    .dev-portfolio-link
+    .draw-line
+    path {
+    stroke-dashoffset: 1 !important;
+    stroke: transparent;
   }
 }

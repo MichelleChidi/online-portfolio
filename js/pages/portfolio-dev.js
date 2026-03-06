@@ -1,5 +1,5 @@
-import "../../styles/css/pages/home.css";
-import template from "../../src/pages/home.html?raw";
+import "../../styles/css/pages/portfolio-dev.css";
+import template from "../../src/pages/portfolio-dev.html?raw";
 import { contactInit, headerInit } from "../utils";
 
 export function render() {

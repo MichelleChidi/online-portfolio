@@ -1,5 +1,5 @@
-import "../../styles/css/pages/home.css";
-import template from "../../src/pages/home.html?raw";
+import "../../styles/css/pages/art-dabbles.css";
+import template from "../../src/pages/art-dabbles.html?raw";
 import { contactInit, headerInit } from "../utils";
 
 export function render() {
@@ -7,6 +7,5 @@ export function render() {
 }
 
 export async function init() {
-  headerInit();
   contactInit();
 }

@@ -1,0 +1,52 @@
+.page-portfolio-dev {
+  .page-line {
+    .line {
+      background: var(--color-portfolio);
+    }
+  }
+
+  .top-content {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: var(--s-3);
+    justify-content: center;
+    margin-block-end: var(--s-25);
+    row-gap: var(--s-25);
+  }
+
+  .about-design {
+    max-width: 650px;
+    flex: 1 1 400px;
+  }
+
+  .work-experience {
+    display: grid;
+    gap: var(--s-10);
+  }
+
+  .work-experience__description {
+    margin-block-start: var(--s-10);
+  }
+
+  .work-experience__company {
+    display: flex;
+    gap: var(--s-20);
+
+    .work-experience__company-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-white);
+      height: 320px;
+      width: 400px;
+    }
+  }
+
+  .work-experience__date {
+    margin-block-start: var(--s-1);
+  }
+
+  .work-experience__role {
+    margin-block-start: var(--s-4);
+  }
+}

@@ -1,30 +1,18 @@
-.page-line {
-  .line {
-    background: var(--color-main);
+.page-home {
+  .page-line {
+    .line {
+      background: var(--color-main);
+    }
   }
-}
 
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-inline: var(--s-10);
-  padding-block: var(--s-20);
-  row-gap: var(--s-20);
-}
+  .content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: var(--s-22);
+  }
 
-.about {
-  max-width: 650px;
-  flex: 1 1 400px;
-}
-
-.contact-info-container {
-  display: flex;
-  flex-direction: column;
-  gap: var(--s-2);
-
-  .contact-info {
-    display: flex;
-    gap: var(--s-2);
+  .about {
+    flex: 1 1 400px;
+    max-width: 650px;
   }
 }

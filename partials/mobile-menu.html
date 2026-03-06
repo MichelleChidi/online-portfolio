@@ -1,7 +1,12 @@
-<nav class="nav-menu" aria-label="Main navigation">
-  <ul class="menu-tabs">
+<nav
+  id="mobile-nav-menu"
+  class="nav-mobile-menu"
+  aria-label="Main navigation"
+  data-expanded="true"
+>
+  <ul class="mobile-menu-tabs">
     <li>
-      <a class="menu-item home-link" href="/home" data-link="true">
+      <a class="mobile-menu-item home-link" href="/home" data-link="true">
         <svg
           width="32"
           height="32"
@@ -10,11 +15,15 @@
         >
           <path d="M4 21V9L12 3L20 9V21H14V14H10V21H4Z" fill="currentColor" />
         </svg>
-        <span class="menu-text">Home</span>
+        <span class="mobile-menu-text">Home</span>
       </a>
     </li>
     <li>
-      <a class="menu-item portfolio-link" href="/portfolio" data-link="true">
+      <a
+        class="mobile-menu-item portfolio-link"
+        href="/portfolio"
+        data-link="true"
+      >
         <svg
           width="32"
           height="32"
@@ -27,11 +36,11 @@
           />
         </svg>
 
-        <span class="menu-text">Portfolio</span>
+        <span class="mobile-menu-text">Work</span>
       </a>
     </li>
     <li>
-      <a class="menu-item art-link" href="/art-dabbles" data-link="true">
+      <a class="mobile-menu-item art-link" href="/art-dabbles" data-link="true">
         <svg
           width="32"
           height="32"
@@ -43,8 +52,26 @@
             fill="currentColor"
           />
         </svg>
-        <span class="menu-text">Art dabbles</span>
+        <span class="mobile-menu-text">Art</span>
       </a>
     </li>
+    <li>
+      <button class="nav-mobile-menu-button" data-nav-button="true">
+        <svg
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          heighr="32"
+          width="32"
+        >
+          <path d="M12 15L7 10H17L12 15Z" fill="currentColor" />
+        </svg>
+      </button>
+    </li>
+  </ul>
+  <ul class="indicator-container">
+    <li><div class="indicator home"></div></li>
+    <li><div class="indicator work"></div></li>
+    <li><div class="indicator art"></div></li>
+    <li></li>
   </ul>
 </nav>
