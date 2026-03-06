@@ -1,0 +1,140 @@
+.page-portfolio {
+  .page-line {
+    .line {
+      background: var(--color-portfolio);
+    }
+  }
+
+  .top-content {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: var(--s-3);
+    justify-content: center;
+    margin-block-end: var(--s-25);
+    row-gap: var(--s-25);
+  }
+
+  .about-design {
+    max-width: 650px;
+    flex: 1 1 400px;
+  }
+
+  .work-experience {
+    margin-block-start: var(--s-10);
+  }
+
+  .work-experience__heading {
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 150%;
+    margin-block-end: var(--s-3);
+    gap: var(--s-4);
+  }
+
+  .work-experience__date {
+    margin-inline-start: var(--s-25);
+    white-space: nowrap;
+  }
+
+  .work-experience__tools {
+    margin-block-start: var(--s-5);
+  }
+
+  .case-studies {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 100%;
+
+    .case-study {
+      position: relative;
+    }
+
+    .case-study.multiple {
+      display: flex;
+    }
+  }
+
+  .board {
+    align-items: center;
+    display: flex;
+    height: 560px;
+    justify-content: center;
+    padding-inline: var(--s-12);
+    padding-block: var(--s-17);
+    width: 80%;
+  }
+
+  .introduction {
+    margin-block: var(--s-5);
+  }
+
+  .post-it {
+    box-shadow: var(--shadow-default);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 420px;
+    padding: var(--s-10);
+    position: absolute;
+    text-decoration: none;
+    width: 420px;
+
+    .title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 1.5;
+      margin-block-end: var(--s-1);
+    }
+
+    .subtitle {
+      color: var(--color-text-light);
+    }
+  }
+
+  .post-it:hover {
+    .post-it-btn {
+      gap: var(--s-8);
+    }
+  }
+
+  .bg-yellow {
+    background: var(--color-bg-yellow-100);
+  }
+
+  .bg-blue {
+    background: var(--color-bg-blue-100);
+  }
+
+  .bg-magenta {
+    background: var(--color-bg-magneta-100);
+  }
+
+  .bg-red {
+    background: var(--color-bg-red-100);
+  }
+
+  .bg-green {
+    background: var(--color-bg-green-100);
+  }
+
+  .board.bg-red {
+    margin-block-start: 60px;
+  }
+
+  .post-it.bg-blue,
+  .post-it.bg-green {
+    right: 0;
+  }
+
+  .post-it-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--s-3);
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 150%;
+  }
+}

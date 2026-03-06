@@ -18,10 +18,20 @@
   --color-white: #fff;
   --color-black: #000;
 
+  --color-neutral-light: #e5e5e5;
+  --color-neutral-dark: #d2d2d2;
   --color-text-dark: #252525;
   --color-text-light: #525252;
 
   --color-bg-dark: #333;
+  --color-bg-yellow-100: #fefcd3;
+  --color-bg-blue-100: #e9fbff;
+  --color-bg-magneta-100: #ffc5f7;
+  --color-bg-red-100: #ffb59d;
+  --color-bg-green-100: #d8fae5;
+
+  /* Box shadow */
+  --shadow-default: 0px 4px 4px rgb(0 0 0 / 25%);
 
   /* sizes */
   --s-1: 4px;
@@ -37,16 +47,22 @@
   --s-11: 44px;
   --s-12: 48px;
   --s-13: 52px;
+  --s-14: 56px;
+  --s-15: 60px;
+  --s-16: 64px;
   --s-17: 68px;
   --s-20: 80px;
+  --s-22: 88px;
+  --s-25: 100px;
+  --s-30: 120px;
+  --s-35: 140px;
+  --s-40: 160px;
 
   /* font-sizes */
   --fs-sm: clamp(1rem, 0.8vw, 1.125rem);
   --fs-md: clamp(1.5rem, 1vw, 1.75rem);
   --fs-lg: clamp(2rem, 2vw, 3rem);
   --fs-xl: clamp(4rem, 4vw, 5.25rem);
-
-  --logo-height: 80px;
 }
 
 @font-face {
@@ -115,9 +131,29 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter/Inter-SemiBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
-  font-size: clamp(16px, 1.1vw, 18px);
+  background-image: url(../../assets/images/texture-bkg.jpg);
+  background-repeat: repeat;
+  font-size: clamp(20px, 1.1vw, 24px);
   height: 100%;
+  line-height: 1.5;
+  scroll-behavior: smooth;
 
   * {
     box-sizing: border-box;
@@ -135,8 +171,7 @@ body {
     linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
   background-size: var(--grid-size) var(--grid-size);
   font-family: var(--default-font), sans-serif;
-  font-weight: 380;
-  height: 100%;
+  font-weight: 400;
   line-height: 1.5;
   margin: 0;
   padding: 0;
@@ -148,9 +183,14 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p,
+dd,
+ul {
   padding: 0;
   margin: 0;
+  background: none;
+  border: none;
 }
 
 a {
@@ -163,7 +203,6 @@ a[data-tooltip]:focus::after {
   position: absolute;
   background: var(--color-black);
   color: var(--color-white);
-
   display: block;
   padding: var(--s-2);
   font-weight: bold;
@@ -186,6 +225,28 @@ a[data-tooltip]:focus::after {
   display: flex;
   height: 100%;
   flex-direction: row-reverse;
+  min-height: 100vh;
+}
+
+.page-line {
+  padding-block-end: var(--s-4);
+  width: 100%;
+
+  .line {
+    height: var(--s-1);
+    width: 100%;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1520px;
+  padding-inline: var(--s-10);
+  padding-block: var(--s-30);
 }
 
 #app {
@@ -194,7 +255,7 @@ a[data-tooltip]:focus::after {
 
 .skip {
   position: absolute;
-  top: -44px;
+  top: -52px;
   left: 10px;
   background-color: var(--color-bg-dark);
   color: var(--color-white);
@@ -206,4 +267,22 @@ a[data-tooltip]:focus::after {
 
 .skip:focus {
   top: 0;
+}
+
+/* Utility css */
+.text-bold {
+  font-weight: 700;
+}
+
+.text-light {
+  color: var(--color-text-light);
+}
+
+.flex {
+  display: flex;
+}
+
+.text-md {
+  font-size: 1.2rem;
+  line-height: 120%;
 }

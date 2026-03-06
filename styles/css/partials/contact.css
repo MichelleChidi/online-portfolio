@@ -1,0 +1,17 @@
+.contact-information {
+  .contact-links {
+    font-style: normal;
+    list-style: none;
+    margin-block-start: var(--s-6);
+
+    li {
+      margin-block-end: var(--s-3);
+    }
+
+    .contact-info {
+      align-items: center;
+      display: flex;
+      gap: var(--s-2);
+    }
+  }
+}

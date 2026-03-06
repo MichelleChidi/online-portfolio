@@ -1,46 +1,22 @@
-import routes from "../utils/routes.json" with { type: "json" };
+const routes = {
+  "/": () => import("./pages/home.js"),
+  "/portfolio": () => import("./pages/portfolio.js"),
+  "/portfolio-dev": () => import("./pages/portfolio-dev.js"),
+  "/design-system": () => import("./pages/case-studies/design-system.js"),
+  "/website-redesign": () => import("./pages/case-studies/website-redesign.js"),
+  "/art-dabbles": () => import("./pages/art-dabbles.js"),
+};
 
-function loadCSS(href) {
-  const existing = document.querySelector("link[data-stylesheet]");
-  if (existing) {
-    existing.remove();
-  }
-
-  const link = document.createElement("link");
-  link.rel = "stylesheet";
-  link.href = href;
-  link.dataset.stylesheet = "true";
-  document.head.appendChild(link);
-}
-
-function loadJS(src) {
-  const existing = document.querySelector("script[data-js]");
-  if (existing) {
-    existing.remove();
-  }
-
-  const script = document.createElement("script");
-  script.type = "module";
-  script.src = src;
-  script.dataset.js = "true";
-  document.body.appendChild(script);
-}
+const app = document.getElementById("app");
 
 async function loadPage(path) {
-  const htmlFile = routes.pages[path] || routes.pages["/"];
-  const cssFile = routes.css[path] || routes.css["/"];
-  const jsFile = routes.js[path] || routes.js["/"];
-  const res = await fetch(htmlFile);
-  const html = await res.text();
-  if (cssFile) {
-    loadCSS(cssFile);
-  }
+  const loader = routes[path] || routes["/"];
+  const module = await loader();
+  app.innerHTML = module.render();
 
-  if (jsFile) {
-    loadJS(jsFile);
+  if (module.init) {
+    module.init();
   }
-
-  document.getElementById("app").innerHTML = html;
 }
 
 function navigate(path) {

@@ -1,0 +1,109 @@
+.nav-mobile-menu {
+  --button-width: var(--s-14);
+
+  background: var(--color-white);
+  border-radius: var(--s-1);
+  position: fixed;
+
+  bottom: var(--s-4);
+  left: 50%;
+  padding-inline: var(--s-3);
+  padding-block-start: var(--s-3);
+  padding-block-end: var(--s-2);
+  border: 1px solid var(--color-neutral-light);
+  z-index: 999;
+
+  .mobile-menu-tabs {
+    display: flex;
+    gap: var(--s-2);
+
+    li {
+      list-style: none;
+    }
+  }
+
+  .mobile-menu-item {
+    align-items: center;
+    border-radius: var(--s-1);
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    justify-content: center;
+    gap: var(--s-1);
+    padding-block: var(--s-2);
+    text-decoration: none;
+    width: var(--button-width);
+  }
+
+  .indicator-container {
+    display: flex;
+    gap: var(--s-2);
+    margin-block-start: var(--s-2);
+
+    li {
+      list-style: none;
+      width: var(--button-width);
+    }
+  }
+
+  .indicator {
+    display: none;
+    background: var(--color-neutral-dark);
+    height: var(--s-1);
+    width: var(--s-5);
+    margin: auto;
+  }
+
+  .home-link {
+    background: var(--color-main);
+    font-family: var(--dev-font);
+  }
+
+  .portfolio-link {
+    background: var(--color-portfolio);
+    font-family: var(--hand-written-font);
+  }
+
+  .art-link {
+    background: var(--color-art);
+    font-family: var(--art-font);
+  }
+
+  .nav-mobile-menu-button {
+    border-radius: var(--s-1);
+    border: 1px solid var(--color-neutral-light);
+    height: 100%;
+    width: var(--button-width);
+  }
+}
+
+.nav-mobile-menu[data-expanded="false"] {
+  .mobile-menu-text {
+    display: none;
+  }
+
+  .nav-mobile-menu-button {
+    transform: rotate(180deg);
+  }
+}
+
+#mobile-menu:has(+ #app .page-home) .nav-mobile-menu {
+  .indicator.home {
+    display: block;
+  }
+}
+
+#mobile-menu:has(+ #app .page-portfolio) .nav-mobile-menu,
+#mobile-menu:has(+ #app .page-portfolio-dev) .nav-mobile-menu,
+#mobile-menu:has(+ #app .page-design-system) .nav-mobile-menu,
+#mobile-menu:has(+ #app .page-website-redesign) .nav-mobile-menu {
+  .indicator.work {
+    display: block;
+  }
+}
+
+#mobile-menu:has(+ #app .page-art-dabbles) .nav-mobile-menu {
+  .indicator.art {
+    display: block;
+  }
+}
