@@ -7,12 +7,24 @@
 
   .content {
     flex-direction: row;
-    flex-wrap: wrap;
-    row-gap: var(--s-22);
   }
 
   .about {
     flex: 1 1 400px;
     max-width: 650px;
+  }
+
+  @media screen and (max-width: 1279px) {
+    .content {
+      align-items: center;
+      flex-direction: column;
+      gap: var(--s-18);
+    }
+  }
+
+  @media screen and (max-width: 479px) {
+    .content {
+      gap: var(--s-14);
+    }
   }
 }

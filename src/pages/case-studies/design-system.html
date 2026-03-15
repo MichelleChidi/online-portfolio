@@ -9,6 +9,7 @@
       aria-label="Go back to portfolio page"
     >
       <img
+        class="navigation-icon"
         src="../assets/icons/arrow-backward.svg"
         width="32"
         height="32"
@@ -16,16 +17,16 @@
       />
       Back
     </a>
-    <article aria-labelledby="case__name" class="case-design-system">
+    <article aria-labelledby="case-name" class="case-design-system">
       <header>
         <div class="case__title">
           <div>
-            <h1 id="case__name">Design System</h1>
+            <h1 id="case-name" class="case__name">Design System</h1>
             <p class="case__caption">With Figma and Storybook</p>
           </div>
           <img
             src="../assets/images/design-system.png"
-            class="design-system-image"
+            class="hero-image"
             width="624"
             height="407"
             alt=" "
@@ -169,7 +170,7 @@
               <h2 class="case__chapter-title">Design Strategy</h2>
               <div>
                 With my directive, we followed the following guidelines:
-                <ul class="case__guidelines">
+                <ul class="case__list">
                   <li>
                     <a href="https://atomicdesign.bradfrost.com/chapter-2/">
                       <span class="text-bold">
@@ -217,7 +218,7 @@
           >
             <div class="case__chapter-text">
               <h2 class="case__chapter-title">Design implementation</h2>
-              <div>
+              <div class="case__chapter-section">
                 <h3 class="case__subheading">Component anatomy</h3>
                 <p>
                   I treated components were treated as modular building blocks.
@@ -225,7 +226,7 @@
                   components according to Atomic Design principles.
                 </p>
               </div>
-              <div>
+              <div class="case__chapter-section">
                 <h3 class="case__subheading">States and scenarios</h3>
                 <p>
                   I treated components were treated as modular building blocks.
@@ -233,7 +234,7 @@
                   components according to Atomic Design principles.
                 </p>
               </div>
-              <div>
+              <div class="case__chapter-section">
                 <h3 class="case__subheading">Accessibility considerations</h3>
                 <p>
                   Accessibility was integrated into each component by default,
@@ -310,8 +311,9 @@
       </div>
     </article>
     <a class="navigation-link forward-link" href="/website-redesign">
-      See the redesign project
+      See redesign project
       <img
+        class="navigation-icon"
         src="../assets/icons/arrow-forward.svg"
         width="32"
         height="32"

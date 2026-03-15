@@ -7,19 +7,26 @@
 
   .top-content {
     display: flex;
-    flex-wrap: wrap;
-    column-gap: var(--s-3);
     justify-content: center;
-    margin-block-end: var(--s-25);
-    row-gap: var(--s-25);
+    margin-block-end: var(--s-22);
   }
 
   .about-design {
     max-width: 650px;
-    flex: 1 1 400px;
+  }
+
+  .section-title {
+    margin-inline-start: var(--s-2);
   }
 
   .work-experience {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-6);
+    margin-block-start: var(--s-20);
+  }
+
+  .work-experiences__companies {
     display: grid;
     gap: var(--s-10);
   }
@@ -30,23 +37,78 @@
 
   .work-experience__company {
     display: flex;
-    gap: var(--s-20);
+    gap: var(--s-12);
+  }
 
-    .work-experience__company-logo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--color-white);
-      height: 320px;
-      width: 400px;
-    }
+  .work-experience__company-logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: center;
+    background: var(--color-white);
+    height: 320px;
+    width: 320px;
   }
 
   .work-experience__date {
     margin-block-start: var(--s-1);
   }
 
-  .work-experience__role {
-    margin-block-start: var(--s-4);
+  .work-experience__details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-1);
+    margin-block-start: var(--s-3);
+  }
+
+  @media screen and (max-width: 1279px) {
+    .top-content {
+      align-items: center;
+      flex-direction: column;
+      gap: var(--s-18);
+    }
+
+    .work-experience__company {
+      gap: var(--s-12);
+    }
+
+    .work-experience {
+      margin-block-start: 0;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .work-experience__company {
+      flex-direction: column;
+    }
+
+    .work-experiences__companies {
+      gap: var(--s-15);
+    }
+
+    .work-experience__company {
+      gap: var(--s-8);
+    }
+
+    .work-experience__description {
+      margin-block-start: 0;
+    }
+  }
+
+  @media screen and (max-width: 479px) {
+    .top-content {
+      gap: var(--s-14);
+    }
+
+    .work-experience__company-logo {
+      padding: var(--s-6);
+      width: 100%;
+      height: var(--s-50);
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 }
