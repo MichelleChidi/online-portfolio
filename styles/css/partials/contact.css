@@ -5,7 +5,7 @@
     margin-block-start: var(--s-6);
 
     li {
-      margin-block-end: var(--s-3);
+      margin-block-end: var(--s-2);
     }
 
     .contact-info {
@@ -13,5 +13,10 @@
       display: flex;
       gap: var(--s-2);
     }
+  }
+
+  .contact-icon {
+    width: clamp(var(--s-6), 3vw, var(--s-8));
+    height: auto;
   }
 }

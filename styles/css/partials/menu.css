@@ -112,3 +112,9 @@
     z-index: 1;
   }
 }
+
+@media screen and (max-width: 1023px) {
+  #menu {
+    display: none;
+  }
+}

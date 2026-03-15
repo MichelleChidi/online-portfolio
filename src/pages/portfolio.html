@@ -23,43 +23,40 @@
             users
           </p>
         </section>
-        <section
-          aria-labelledby="work-experience__title"
-          class="work-experience"
-        >
-          <h3 id="work-experience__title" class="work-experience__heading">
-            <img
-              src="../assets/icons/handdrawn-arrow.svg"
-              class="straight-arrow"
-              height="36"
-              width="36"
-              alt=" "
-            />
-            <span>Work experience</span>
-          </h3>
-          <div class="work-experience__content">
-            <div class="flex">
-              <div>
-                <p>UX/UI designer at Voordeeluitjes</p>
-                <p class="text-light">Deventer, NL</p>
-              </div>
-              <p class="work-experience__date text-light">2023 - 2025</p>
-            </div>
-            <p class="work-experience__tools">
-              <span class="text-bold">Tools:</span> Figma, Adobe Illustrator,
-              Invision, Adobe XD, Mouseflow, Clarity, Google analytics, Google
-              tag manager, Convert, Tally, Google forms, Storybook, Histoire.
-            </p>
-          </div>
-        </section>
         <address
           id="contact-info-container"
           class="contact-information"
         ></address>
       </div>
     </div>
+    <section aria-labelledby="work-experience-title" class="work-experience">
+      <div>
+        <h2 id="work-experience-title" class="section-title">
+          Work experience
+        </h2>
+        <hr />
+      </div>
+      <div class="work-experience__content">
+        <div class="work-experience__heading">
+          <div>
+            <p class="text-bold">UX/UI designer at Voordeeluitjes</p>
+            <p class="text-light">Deventer, NL</p>
+          </div>
+          <p class="work-experience__date text-light">2023 - 2025</p>
+        </div>
+        <p class="work-experience__tools">
+          <span class="text-bold">Tools:</span> Figma, Adobe Illustrator,
+          Invision, Adobe XD, Mouseflow, Clarity, Google analytics, Google tag
+          manager, Convert, Tally, Google forms, Storybook, Histoire.
+        </p>
+      </div>
+    </section>
     <section aria-labelledby="case-studies-title" class="case-studies">
-      <h2 id="case-studies-title" class="visually-hidden">My case studies</h2>
+      <div>
+        <!-- <hr /> -->
+        <h2 id="case-studies-title" class="section-title">Case studies</h2>
+        <hr />
+      </div>
       <div class="case-study">
         <div class="board bg-yellow">
           <img
@@ -82,7 +79,7 @@
               View project
               <img
                 src="../assets/icons/arrow-forward.svg"
-                class="design-system-image"
+                class="case-study__icon"
                 width="32"
                 height="32"
                 alt=" "
@@ -91,6 +88,38 @@
           </a>
         </div>
       </div>
+
+      <a class="case-study-card" href="/design-system" data-link="true">
+        <div class="case-study-card__top bg-yellow">
+          <img
+            src="../assets/images/design_system_image.png"
+            class="case-study-card__image"
+            width="480"
+            height="275"
+            alt=" "
+          />
+        </div>
+        <div class="case-study-card__content bg-blue">
+          <div>
+            <h3 class="title">Creating a design system</h3>
+            <p class="subtitle">with Figma and storybook</p>
+            <p class="introduction">
+              Creating reusable components and tokens with consistent design and
+              accessibility considerations
+            </p>
+          </div>
+          <div class="post-it-btn">
+            View project
+            <img
+              src="../assets/icons/arrow-forward.svg"
+              class="case-study__icon"
+              width="32"
+              height="32"
+              alt=" "
+            />
+          </div>
+        </div>
+      </a>
       <div class="case-study">
         <div class="board bg-magenta">
           <img
@@ -114,15 +143,47 @@
               View project
               <img
                 src="../assets/icons/arrow-forward.svg"
-                class="design-system-image"
-                width="32"
-                height="32"
+                class="case-study__icon"
+                width="28"
+                height="28"
                 alt=" "
               />
             </div>
           </a>
         </div>
       </div>
+
+      <a class="case-study-card" href="/website-redesign" data-link="true">
+        <div class="case-study-card__top bg-magenta">
+          <img
+            src="../assets/images/steppers-image.png"
+            class="case-study-card__image"
+            width="340"
+            height="445"
+            alt=" "
+          />
+        </div>
+        <div class="case-study-card__content bg-green">
+          <div>
+            <h3 class="title">Website redesign</h3>
+            <p class="subtitle">with Figma</p>
+            <p class="introduction">
+              Gradual redesign of an entire website. Consistent design and
+              user-friendly optimizations.
+            </p>
+          </div>
+          <div class="post-it-btn">
+            View project
+            <img
+              src="../assets/icons/arrow-forward.svg"
+              class="case-study__icon"
+              width="32"
+              height="32"
+              alt=" "
+            />
+          </div>
+        </div>
+      </a>
     </section>
   </div>
 </div>

@@ -6,6 +6,7 @@ export function render() {
         <li id="contact-link-mail">
             <a href="mailto:michellenjemanze@yahoo.com" class="contact-info">
             <img
+                class="contact-icon"
                 src="../assets/icons/mail.svg"
                 height="32"
                 width="32"
@@ -20,6 +21,7 @@ export function render() {
                 class="contact-info"
             >
             <img
+                class="contact-icon"
                 src="../assets/icons/linkedin.svg"
                 height="32"
                 width="32"
@@ -29,8 +31,9 @@ export function render() {
             >
         </li>
         <li id="contact-link-cv">
-            <a href="mailto:michelle.njemanze@yahoo.com" class="contact-info">
+            <a href="../assets/downloads/cv.zip" class="contact-info" download="Michelle_Chidi-Njemanze_CV">
             <img
+                class="contact-icon"
                 src="../assets/icons/download.svg"
                 height="32"
                 width="32"
