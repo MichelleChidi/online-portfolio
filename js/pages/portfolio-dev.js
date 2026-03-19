@@ -10,3 +10,6 @@ export async function init() {
   headerInit();
   contactInit();
 }
+
+export const description =
+  "Frontend work experience of Michelle Chidi-Njemanze. The companies highlighted are Attineos, Voordeeluijtes and Perplex.";

@@ -33,3 +33,6 @@ export async function init() {
 
   sections.forEach((section) => observer.observe(section));
 }
+
+export const description =
+  "A Design system  case study of Michelle Chidi-Njemanze. Project created for the company Voordeeluitjes";

@@ -10,3 +10,6 @@ export async function init() {
   headerInit();
   contactInit();
 }
+
+export const description =
+  "Michelle Chidi-Njemanze's online portfolio. She describes her role as UX engineer with particular interest in accessibility.";

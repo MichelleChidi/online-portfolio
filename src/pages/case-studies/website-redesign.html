@@ -13,23 +13,29 @@
         src="../assets/icons/arrow-backward.svg"
         width="32"
         height="32"
-        alt=" "
+        alt=""
       />
       Back
     </a>
     <article aria-labelledby="case__name" class="case-design-system">
       <header>
         <div class="case__title">
-          <div>
-            <h1 id="case-name" class="case__name">Website redesign</h1>
+          <div class="case__title-text">
+            <h1 id="case-name" class="case__name">
+              Accommodation Selection Flow Redsign
+            </h1>
             <p class="case__caption">With Figma</p>
           </div>
           <img
-            src="../assets/images/design-system.png"
+            src="../assets/images/project/website-redesign.webp"
+            srcset="
+              ../assets/images/project/website-redesign.webp    1x,
+              ../assets/images/project/website-redesign@2x.webp 2x
+            "
             class="hero-image"
             width="624"
-            height="407"
-            alt=" "
+            height="475"
+            alt=""
           />
         </div>
         <div class="case__intro">
@@ -37,24 +43,26 @@
             <dt>Role</dt>
             <dd>UX/UI designer</dd>
 
-            <dt>Timeline</dt>
-            <dd>April 2024</dd>
-
             <dt>Tools</dt>
-            <dd>Figma, Clarity, Google Analytics</dd>
+            <dd>Figma, Clarity, GA4, Convert</dd>
 
             <dt>Team</dt>
-            <dd>UX/UI Designer, Frontend Developer, Team Lead</dd>
+            <dd>
+              Michelle C.
+              <span class="text-light"
+                >[UX/UI designer + Frontend Developer]</span
+              >, Ashley van V. <span class="text-light">[Team lead]</span>,
+              Darren A. <span class="text-light">[UX/UI Designer]</span>
+            </dd>
 
             <dt>Product</dt>
-            <dd>Voordeelijes</dd>
+            <dd>Voordeeluitjes</dd>
           </dl>
           <div class="case__description">
             <h2 class="case__description-title">Project goal</h2>
             <p>
-              Create a simple, scalable design system that enables consistent UI
-              design and efficient collaboration between designers and
-              developers.
+              Improve visual design, usability, conversion performance, and
+              accessibility of accommodation selection process of an OTA.
             </p>
           </div>
         </div>
@@ -65,300 +73,440 @@
             class="case__table-of-contents-links"
             aria-label="Section navigation"
           >
-            <li>
-              <a class="case__chapter-link" href="#case__chapter-research">
-                <span class="case__number text-bold">01</span>
-                <span class="case__chapter-name">Research</span>
-              </a>
-            </li>
-            <li>
-              <a class="case__chapter-link" href="#case__chapter-research">
-                <span class="case__number text-bold">01</span>
-                <span class="case__chapter-name">Approach</span>
-              </a>
-            </li>
-            <li>
-              <a class="case__chapter-link" href="#case__chapter-problem">
-                <span class="case__number text-bold">02</span>
-                <span class="case__chapter-name">Example problem</span>
-              </a>
-            </li>
-            <li>
-              <a class="case__chapter-link" href="#case__chapter-discovery">
-                <span class="case__number text-bold">03</span>
-                <span class="case__chapter-name">Discovery</span>
-              </a>
-            </li>
-            <li>
-              <a class="case__chapter-link" href="#case__chapter-goal">
-                <span class="case__number text-bold">04</span>
-                <span class="case__chapter-name">Goal</span>
-              </a>
-            </li>
-            <li>
-              <a
-                class="case__chapter-link"
-                href="#case__chapter-design-strategy"
-              >
-                <span class="case__number text-bold">05</span>
-                <span class="case__chapter-name">Design strategy</span>
-              </a>
-            </li>
-            <li>
-              <a
-                class="case__chapter-link"
-                href="#case__chapter-design-iterations"
-              >
-                <span class="case__number text-bold">06</span>
-                <span class="case__chapter-name">Design iterations</span>
-              </a>
-            </li>
-            <li>
-              <a
-                class="case__chapter-link"
-                href="#case__chapter-design-implementation"
-              >
-                <span class="case__number text-bold">06</span>
-                <span class="case__chapter-name">
-                  Final design implementation
-                </span>
-              </a>
-            </li>
-            <li>
-              <a class="case__chapter-link" href="#case__chapter-results">
-                <span class="case__number text-bold">07</span>
-                <span class="case__chapter-name">Results</span>
-              </a>
-            </li>
+            <ul>
+              <li>
+                <a class="case__chapter-link" href="#case__chapter-product">
+                  <span class="case__number text-bold">01</span>
+                  <span class="case__chapter-name">Product brief</span>
+                </a>
+              </li>
+              <li>
+                <a class="case__chapter-link" href="#case__chapter-before">
+                  <span class="case__number text-bold">02</span>
+                  <span class="case__chapter-name">Before</span>
+                </a>
+              </li>
+              <li>
+                <a class="case__chapter-link" href="#case__chapter-research">
+                  <span class="case__number text-bold">03</span>
+                  <span class="case__chapter-name">Research</span>
+                </a>
+              </li>
+              <li>
+                <a class="case__chapter-link" href="#case__chapter-insights">
+                  <span class="case__number text-bold">04</span>
+                  <span class="case__chapter-name">Insights</span>
+                </a>
+              </li>
+              <li>
+                <a class="case__chapter-link" href="#case__chapter-approach">
+                  <span class="case__number text-bold">05</span>
+                  <span class="case__chapter-name">Approach</span>
+                </a>
+              </li>
+              <li>
+                <a class="case__chapter-link" href="#case__chapter-goal">
+                  <span class="case__number text-bold">06</span>
+                  <span class="case__chapter-name">Goal</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="case__chapter-link"
+                  href="#case__chapter-design-strategy"
+                >
+                  <span class="case__number text-bold">07</span>
+                  <span class="case__chapter-name">Design strategy</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="case__chapter-link"
+                  href="#case__chapter-design-implementation"
+                >
+                  <span class="case__number text-bold">08</span>
+                  <span class="case__chapter-name"> Final design </span>
+                </a>
+              </li>
+            </ul>
           </nav>
         </aside>
         <div class="case__chapters">
+          <section class="case__chapter" id="case__chapter-product">
+            <div class="case__chapter-text">
+              <h2 class="case__chapter-title">Product brief</h2>
+              <div>
+                Voordeeltuitjes is
+                <span class="text-bold">an online travel agency (OTA)</span>
+                offering curated hotel stay packages across the Netherlands and
+                Europe.
+              </div>
+            </div>
+            <figure>
+              <img
+                src="../assets/images/project/voordeeluitjes.webp"
+                class="case__image"
+                width="745"
+                height="483"
+                alt="Homepage of Voordeeltuitjes"
+              />
+              <figcaption>
+                Landing page of Voordeeltuitjes, a hotel booking platform (OTA).
+              </figcaption>
+            </figure>
+          </section>
+          <section class="case__chapter" id="case__chapter-before">
+            <h2 class="case__chapter-title">
+              Before: the accommodation selection flow
+            </h2>
+
+            <figure class="top-image">
+              <img
+                src="../assets/images/browser-header.png"
+                class="case__image"
+                width="640"
+                height="380"
+                alt=""
+              />
+              <video
+                class="case__image"
+                width="320"
+                height="240"
+                autoplay
+                playsinline
+                muted
+                loop
+              >
+                <source
+                  src="../assets/videos/accommodation-selection-flow.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+              <figcaption>
+                <span class="text-bold">Before:</span> the accommodation
+                selection flow had no clear steps and no distinction between
+                accommodations.
+              </figcaption>
+            </figure>
+            <div>
+              <ul class="case__list">
+                <li>
+                  The flow consisted of three steps: package selection, date
+                  selection, and accommodation selection.
+                </li>
+                <li>
+                  Package selection occurred on a separate page. Users were
+                  required to select a package before being redirected to the
+                  accommodation selection page
+                </li>
+                <li>
+                  The cheapest accommodation was preselected to promote
+                  low-price offers and allow users to quickly proceed to booking
+                  without actively comparing options.
+                </li>
+                <li>
+                  However, differences between accommodations and their value
+                  propositions were not immediately clear. Users had to click
+                  “View info” to access detailed information about each option.
+                </li>
+              </ul>
+            </div>
+          </section>
           <section class="case__chapter" id="case__chapter-research">
             <div class="case__chapter-text">
               <h2 class="case__chapter-title">Research</h2>
               <div>
-                Working without an established design system introduced problems
-                such as:
-                <ul class="case__list">
-                  <li>Inconsistent component behavior and visual patterns.</li>
-                  <li>
-                    Accessibility considerations being applied inconsistently.
-                  </li>
-                  <li>
-                    Limited documentation of assets, components, and tokens.
-                  </li>
-                  <li>Poor communication with developers.</li>
-                  <li>Slow design process.</li>
-                  <li>
-                    Designers manually maintained multiple component variants
-                    across file.
-                  </li>
-                  <li>Difficulty onboarding new designers and developers.</li>
-                </ul>
-              </div>
-            </div>
-            <img
-              src="../assets/images/website-problems.png"
-              class="case__image"
-              width="745"
-              height="483"
-              alt=" "
-            />
-          </section>
-          <section class="case__chapter" id="case__chapter-problem">
-            <div class="case__chapter-text">
-              <h2 class="case__chapter-title">Problem</h2>
-              <p>
-                This project was not meant to only improve the usability of our
-                components for our users but also to improve the work experience
-                of the design team and development team.Given my background in
-                front-end development and understanding of the challenges facing
-                the team, one of my major goals was to bridge the gap between
-                designers and developers.
-              </p>
-            </div>
-            <img
-              src="../assets/images/typography-system.png"
-              class="case__image"
-              width="500"
-              height="645"
-              alt=" "
-            />
-          </section>
-          <section class="case__chapter" id="case__chapter-discovery">
-            <div class="case__chapter-text">
-              <h2 class="case__chapter-title">Discovery</h2>
-              <div>
-                With my directive, we followed the following guidelines:
+                A combination of qualitative and quantitative research methods
+                was used to identify usability issues and opportunities for
+                improvement:
                 <ul class="case__list">
                   <li>
-                    <a href="https://atomicdesign.bradfrost.com/chapter-2/">
-                      <span class="text-bold">
-                        Atomic design by Brad Frost:
-                      </span>
-                    </a>
-                    Adopted to create reusable, scalable components with clearly
-                    defined relationships between UI elements.
+                    Eye-tracking user research by an external agency,
+                    <a href="https://www.unravelresearch.com/">Unravel</a>.
                   </li>
                   <li>
-                    <a href="https://www.w3.org/WAI/WCAG22/quickref/">
-                      <span class="text-bold">WCAG 2.2:</span>
-                    </a>
-                    We strictly followed the guidelines set for accessibility at
-                    this level.
+                    User interviews conducted internally with both returning and
+                    first-time users.
                   </li>
                   <li>
-                    <a
-                      href="https://uxdesign.cc/the-4px-baseline-grid-89485012dea6"
-                    >
-                      <span class="text-bold">4px grid model:</span>
-                    </a>
-                    Used to ensureconsistent spacing, alignment, and visual
-                    rhythm across all components.
+                    Brainstorming sessions and exploratory analysis by the
+                    design team.
                   </li>
                   <li>
-                    <span class="text-bold">Naming convention:</span> Tokens
-                    such as icons, colors, and texts follow a fixed naming
-                    convention, making them easily identifiable.
+                    Session recordings and analytics (Microsoft Clarity, GA4) to
+                    observe real user behavior.
                   </li>
                 </ul>
+                <p class="mbs-4">
+                  I collaborated with the design team to define interview
+                  questions, analyze user sessions, and translate findings into
+                  actionable insights.
+                </p>
               </div>
             </div>
-            <img
-              src="../assets/images/atomic-system.png"
-              class="case__image"
-              width="631"
-              height="387"
-              alt=" "
-            />
+            <figure>
+              <img
+                src="../assets/images/project/research-overview.webp"
+                class="case__image"
+                width="745"
+                height="483"
+                alt="A spreadsheet containing ideas for the website improvements"
+              />
+              <figcaption>
+                Documentation of the various ideas for improvements with
+                statuses of its validity based on research.
+              </figcaption>
+            </figure>
+          </section>
+          <section class="case__chapter" id="case__chapter-insights">
+            <h2 class="case__chapter-title">Insights</h2>
+            Key findings from the research included:
+            <ul class="case__list">
+              <li>
+                Users often skipped or rushed through the accommodation
+                selection step.
+              </li>
+              <li>
+                Users tended to default to the cheapest option without exploring
+                alternatives.
+              </li>
+              <li>
+                Users frequently navigated back and forth between package and
+                accommodation pages when comparing options.
+              </li>
+            </ul>
+          </section>
+          <section class="case__chapter" id="case__chapter-approach">
+            <h2 class="case__chapter-title">Approach</h2>
+            <p>
+              This project required close collaboration with
+              <span class="text-bold">CRO experts</span> and developers. he work
+              was structured into scoped, testable increments and validated
+              through <span class="text-bold">A/B testing</span>. We broke down
+              this problem into 3 key areas: Booking flow structure (steppers),
+              package selection and the accommodation facilities visibility.
+            </p>
           </section>
           <section class="case__chapter" id="case__chapter-goal">
             <div class="case__chapter-text">
-              <h2 class="case__chapter-title">Goal</h2>
-              <div class="case__chapter-section">
-                <h3 class="case__subheading">Component anatomy</h3>
-                <p>
-                  I treated components were treated as modular building blocks.
-                  Using the modal component as an example, I structured
-                  components according to Atomic Design principles.
-                </p>
-              </div>
-              <div class="case__chapter-section">
-                <h3 class="case__subheading">States and scenarios</h3>
-                <p>
-                  I treated components were treated as modular building blocks.
-                  Using the modal component as an example, I structured
-                  components according to Atomic Design principles.
-                </p>
-              </div>
-              <div class="case__chapter-section">
-                <h3 class="case__subheading">Accessibility considerations</h3>
-                <p>
-                  Accessibility was integrated into each component by default,
-                  rather than treated as an afterthought. WCAG-compliant color
-                  contrast ratios Minimum interactive target size of 40×40px
-                  Clear visual hierarchy to support scanability and focus
-                </p>
-              </div>
+              <h2 class="case__chapter-title">
+                Goal: Optimising the accommodation selection flow
+              </h2>
+              <ol class="case__list">
+                <li>
+                  <p class="text-bold">
+                    Introduce a stepper component to guide users through the
+                    flow
+                  </p>
+                  Provide a clear visual representation of all steps required to
+                  complete the booking process.
+                </li>
+                <li>
+                  <p class="text-bold">Reduce back-and-forth navigation</p>
+                  Minimize disruption by keeping users within a single,
+                  continuous flow.
+                </li>
+                <li>
+                  <p class="text-bold">
+                    Highlight unique selling points (USPs) of each accommodation
+                  </p>
+                  Ensure key differences between options are visible at a
+                  glance, including imagery and facilities.
+                </li>
+                <li>
+                  <p class="text-bold">UX & performance metrics</p>
+                  Increase conversion rates and user engagement with
+                  accommodation options.
+                </li>
+              </ol>
             </div>
-            <img
-              src="../assets/images/design_system_image.png"
-              class="case__image"
-              width="640"
-              height="380"
-              alt=" "
-            />
+            <figure>
+              <img
+                src="../assets/images/project/points-of-improvements.webp"
+                class="case__image"
+                width="745"
+                height="483"
+                alt="Previous accommodation selection page of Voordeluitjes broken down into 3 parts: the steps, the package selection and the accommodations"
+              />
+              <figcaption>
+                Breakdown of the project into 3 subcases: steppers, package
+                selection and accommodation USPs.
+              </figcaption>
+            </figure>
           </section>
           <section class="case__chapter" id="case__chapter-design-strategy">
-            <div class="case__chapter-text">
-              <h2 class="case__chapter-title">Design strategy</h2>
-              <div>
-                <p>
-                  Components were built to be WCAG compliant and respect
-                  semantic HTML design. I personally built some complex
-                  components with the development team using Radix UI component
-                  library. The library provides components that follow WAI-ARIA
-                  accessibility standards, keyboard navigation, and screen
-                  reader compatibility out of the box.
-                </p>
-              </div>
+            <h2 class="case__chapter-title">Design strategy</h2>
+            <div>
+              <ol class="case__list">
+                <li>
+                  <p class="text-bold">Clarity</p>
+                  Instead of relying on aggressive promotional tactics or
+                  forcing progression through the flow, we focused on improving
+                  clarity. By making the booking process and accommodation
+                  differences more transparent, we aimed to support informed
+                  decision-making.
+                </li>
+                <li>
+                  <p class="text-bold">Data-driven decisions</p>
+                  Design decisions were informed by:
+                  <ul>
+                    <li>Survey data</li>
+                    <li>
+                      Internal analytics on prefererred facilities by our users
+                    </li>
+                    <li>
+                      Public research on user decision-making behavior on hotel
+                      bookings.
+                    </li>
+                    <li>Competitor analysis</li>
+                    <li>Behavioral data from analytics and heatmaps</li>
+                  </ul>
+                  My main focus was on the companies internal data and user
+                  monitoring.
+                </li>
+                <li>
+                  <p class="text-bold">Accessibility</p>
+                  <p>
+                    Accessibility was integrated into each component from the
+                    start:
+                  </p>
+                  <ul>
+                    <li>
+                      Reduced cognitive load through progressive disclosure
+                      (steppers).
+                    </li>
+                    <li>Use of visual cues such as icons.</li>
+                    <li>WCAG-compliant color contrast.</li>
+                  </ul>
+                </li>
+              </ol>
             </div>
-            <img
-              src="../assets/images/design_system_image.png"
-              class="case__image"
-              width="640"
-              height="380"
-              alt=" "
-            />
           </section>
           <section
             class="case__chapter"
             id="case__chapter-design-implementation"
           >
             <div class="case__chapter-text">
-              <h2 class="case__chapter-title">Final design implementation</h2>
-              <p>
-                Working without an established design system introduced problems
-                such as: Inconsistent component behavior and visual patterns.
-                Accessibility considerations being applied inconsistently.
-                Limited documentation of assets, components, and tokens. Poor
-                communication with developers. Slow design process. Designers
-                manually maintained multiple component variants across file.
-                Difficulty onboarding new designers and developers.
-              </p>
+              <h2 class="case__chapter-title">Design implementation</h2>
+              <ul class="case__list">
+                <li>
+                  <p class="text-bold">Mobile first</p>
+                  The design process started with mobile constraints in mind.
+                  Given the density of information in OTA platforms, this
+                  ensured usability across smaller screens. This approach
+                  influenced decisions such as using a select component for
+                  package selection.
+                </li>
+                <li>
+                  <p class="text-bold">Package selector</p>
+                  A simplified select component was introduced to display
+                  available packages based on the user’s selected departure
+                  date, separating available and unavailable options.
+                </li>
+                <li>
+                  <p class="text-bold">Accommodation USPs</p>
+                  Key information such as room size and guest capacity was
+                  consistently displayed across all accommodations.
+                </li>
+                <li>
+                  <p class="text-bold">Visual design</p>
+                  Facility categories were represented using icons to improve
+                  scannability and draw user attention.
+                </li>
+              </ul>
             </div>
-            <img
-              src="../assets/images/browser-header.png"
-              class="case__image"
-              width="640"
-              height="380"
-              alt=" "
-            />
-            <video
-              class="case__image"
-              width="320"
-              height="240"
-              autoplay
-              playsinline
-              muted
-              loop
-            >
-              <source src="../assets/videos/storybook.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <figure>
+              <img
+                src="../assets/images/project/steppers-design-breakdown.webp"
+                class="case__image"
+                width="640"
+                height="380"
+                alt="The outlined margins and paddings on a stepper."
+              />
+              <figcaption>A breakdown of the design of the steppers</figcaption>
+            </figure>
+            <figure class="mbs-4">
+              <img
+                src="../assets/images/project/package-selector.webp"
+                class="case__image"
+                width="640"
+                height="380"
+                alt="A select component containing the hotel packages"
+              />
+              <figcaption>
+                Package selector open: available and unavailable packages are
+                shown separately
+              </figcaption>
+            </figure>
           </section>
-          <section class="case__chapter" id="case__chapter-results">
+          <section
+            class="case__chapter"
+            id="case__chapter-design-implementation"
+          >
             <div class="case__chapter-text">
-              <h2 class="case__chapter-title">Results</h2>
-              <p>
-                Working without an established design system introduced problems
-                such as: Inconsistent component behavior and visual patterns.
-                Accessibility considerations being applied inconsistently.
-                Limited documentation of assets, components, and tokens. Poor
-                communication with developers. Slow design process. Designers
-                manually maintained multiple component variants across file.
-                Difficulty onboarding new designers and developers.
-              </p>
+              <h2 class="case__chapter-title">Final design</h2>
+              <div class="case__chapter-section">
+                <h3 class="case__subheading">Steppers</h3>
+                <p>
+                  The final design introduced a simple yet visually clear
+                  stepper component. Insights from user interviews and
+                  behavioral data showed that users tend to scroll
+                  quickly—especially on desktop. The stepper provided persistent
+                  context, helping users understand their progress and reducing
+                  the likelihood of skipping steps.
+                </p>
+              </div>
+              <div class="case__chapter-section">
+                <h3 class="case__subheading">Package selector</h3>
+                <p>
+                  To reduce back-and-forth navigation between package and
+                  accommodation pages, we introduced a select component
+                  displaying all available packages with the selected hotel.
+                  This allowed users to compare and switch options without
+                  leaving the flow.
+                </p>
+              </div>
+              <div class="case__chapter-section">
+                <h3 class="case__subheading">
+                  List of accommodation facilities
+                </h3>
+                <p>
+                  Displaying key facilities at a glance increased user curiosity
+                  and engagement with accommodation options. We observed an
+                  increase in interaction with accommodation elements in GA4.
+                  Additionally, CRO stakeholders reported improved sales of
+                  premium rooms, although exact figures were not made available.
+                </p>
+              </div>
             </div>
-            <img
-              src="../assets/images/browser-header.png"
-              class="case__image"
-              width="640"
-              height="380"
-              alt=" "
-            />
-            <video
-              class="case__image"
-              width="320"
-              height="240"
-              autoplay
-              playsinline
-              muted
-              loop
-            >
-              <source src="../assets/videos/storybook.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+
+            <figure class="top-image">
+              <img
+                src="../assets/images/project/final-design-steppers.webp"
+                class="case__image"
+                width="640"
+                height="380"
+                alt="Magenta colored steppers with numbers representing each step on mobile and desktop. There is also a text indicating the current step and number of total steps"
+              />
+              <figcaption>
+                Final design of the steppers and package selector.
+              </figcaption>
+            </figure>
+
+            <figure>
+              <img
+                src="../assets/images/project/final-accommodation-design.webp"
+                class="case__image"
+                width="640"
+                height="380"
+                alt="Standard and premium accommodations on Voordeeltuitjes with the list of proritized facilities that distinguish them"
+              />
+              <figcaption>
+                Final design of the accommodation display with a list of
+                facilities.
+              </figcaption>
+            </figure>
           </section>
         </div>
       </div>
@@ -370,7 +518,7 @@
         src="../assets/icons/arrow-forward.svg"
         width="32"
         height="32"
-        alt=" "
+        alt=""
       />
     </a>
   </div>

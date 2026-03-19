@@ -13,10 +13,13 @@ document.addEventListener("click", (e) => {
 
   e.preventDefault();
   const mobileMenu = document.getElementById("mobile-nav-menu");
-  console.log("hey", mobileMenu.dataset.expanded === "true");
+  console.log({ link });
+
   if (mobileMenu.dataset.expanded === "true") {
     mobileMenu.dataset.expanded = "false";
+    link.ariaLabel = "Expand menu";
   } else {
     mobileMenu.dataset.expanded = "true";
+    link.ariaLabel = "Collapse menu";
   }
 });
