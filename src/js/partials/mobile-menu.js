@@ -1,4 +1,4 @@
-fetch("../partials/mobile-menu.html")
+fetch("../src/partials/mobile-menu.html")
   .then((res) => res.text())
   .then((html) => {
     document.getElementById("mobile-menu").innerHTML = html;
@@ -13,7 +13,6 @@ document.addEventListener("click", (e) => {
 
   e.preventDefault();
   const mobileMenu = document.getElementById("mobile-nav-menu");
-  console.log({ link });
 
   if (mobileMenu.dataset.expanded === "true") {
     mobileMenu.dataset.expanded = "false";

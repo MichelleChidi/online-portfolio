@@ -1,5 +1,5 @@
 import "../../styles/css/pages/home.css";
-import template from "../../src/pages/home.html?raw";
+import template from "../../pages/home.html?raw";
 import { contactInit, headerInit } from "../utils";
 
 export function render() {
