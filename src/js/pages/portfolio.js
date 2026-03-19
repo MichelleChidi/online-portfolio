@@ -1,5 +1,5 @@
 import "../../styles/css/pages/portfolio.css";
-import template from "../../src/pages/portfolio.html?raw";
+import template from "../../pages/portfolio.html?raw";
 import { contactInit, headerInit } from "../utils";
 
 export function render() {
@@ -12,4 +12,4 @@ export async function init() {
 }
 
 export const description =
-  "UX/UI portfolio of Michelle Chidi-Njemanze. Two case  studies on design systems and website redesign are presented here";
+  "UX/UI portfolio of Michelle Chidi-Njemanze. Two case  studies on design systems and website optimization are presented here";

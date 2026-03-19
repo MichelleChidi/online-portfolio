@@ -1,6 +1,6 @@
 import "../../styles/css/pages/art-dabbles.css";
-import template from "../../src/pages/art-dabbles.html?raw";
-import { contactInit, headerInit } from "../utils";
+import template from "../../pages/art-dabbles.html?raw";
+import { contactInit } from "../utils";
 
 export function render() {
   return template;

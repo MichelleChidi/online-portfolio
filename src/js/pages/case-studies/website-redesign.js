@@ -1,5 +1,5 @@
-import "../../../styles/css/pages/case-studies/design-system.css";
-import template from "../../../src/pages/case-studies/website-redesign.html?raw";
+import "../../../styles/css/pages/case-studies.css";
+import template from "../../../pages/case-studies/website-redesign.html?raw";
 
 export function render() {
   return template;
@@ -35,4 +35,4 @@ export async function init() {
 }
 
 export const description =
-  "A website redesign case study of Michelle Chidi-Njemanze. Project created for the company Voordeeluitjes";
+  "A website optimization case study of Michelle Chidi-Njemanze. Project created for the company Voordeeluitjes";

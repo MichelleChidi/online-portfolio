@@ -1,5 +1,5 @@
-import "../../../styles/css/pages/case-studies/design-system.css";
-import template from "../../../src/pages/case-studies/design-system.html?raw";
+import "../../../styles/css/pages/case-studies.css";
+import template from "../../../pages/case-studies/design-system.html?raw";
 
 export function render() {
   return template;
