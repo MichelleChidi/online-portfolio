@@ -10,7 +10,7 @@ export function render() {
                 src="../assets/icons/mail.svg"
                 height="32"
                 width="32"
-                alt=" "
+                alt=""
             />
             <span>michellenjemanze@yahoo.com</span>
             </a>
@@ -25,7 +25,7 @@ export function render() {
                 src="../assets/icons/linkedin.svg"
                 height="32"
                 width="32"
-                alt=" "
+                alt=""
             />
             <span>LinkedIn</span></a
             >
@@ -37,7 +37,7 @@ export function render() {
                 src="../assets/icons/download.svg"
                 height="32"
                 width="32"
-                alt=" "
+                alt=""
             />
             <span>Download my CV</span>
             </a>

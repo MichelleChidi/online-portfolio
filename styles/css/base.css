@@ -100,16 +100,6 @@
 }
 
 @font-face {
-  font-family: "Mogra";
-  src:
-    url("../fonts/mogra/Mogra-Regular.woff2") format("woff2"),
-    url("../fonts/mogra/Mogra-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Irish Grover";
   src:
     url("../fonts/irish-grover/Irish-Grover-Regular.woff") format("woff2"),
@@ -152,7 +142,7 @@
 }
 
 html {
-  background-image: url(../../assets/images/texture-bkg.jpg);
+  background-image: url(../../assets/images/texture-bkg.avif);
   background-repeat: repeat;
   font-size: clamp(20px, 1.1vw, 24px);
   height: 100%;
@@ -190,11 +180,18 @@ h5,
 h6,
 p,
 dd,
+figure,
 ul {
   padding: 0;
   margin: 0;
   background: none;
   border: none;
+}
+
+figcaption {
+  color: var(--color-text-light);
+  margin-block-start: var(--s-3);
+  text-align: center;
 }
 
 a {
@@ -307,6 +304,16 @@ a[data-tooltip]:focus::after {
 
   .content {
     padding-inline: var(--s-15);
+  }
+
+  #menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #mobile-menu {
+    display: none;
   }
 }
 

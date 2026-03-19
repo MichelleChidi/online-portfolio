@@ -9,3 +9,6 @@ export function render() {
 export async function init() {
   contactInit();
 }
+
+export const description =
+  "Michelle Chidi-Njemanze's digital art display. Prints created with Adobe illustrator";

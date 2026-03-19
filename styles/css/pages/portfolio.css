@@ -13,7 +13,7 @@
     margin-block-end: var(--s-25);
   }
 
-  .about-design {
+  .about {
     max-width: var(--max-content-width);
   }
 
@@ -151,7 +151,11 @@
       align-items: center;
       flex-direction: column;
       margin-block-end: var(--s-17);
-      gap: var(--s-18);
+      gap: var(--s-10);
+    }
+
+    .hero {
+      height: clamp(404px, 36vw, 416px);
     }
 
     .work-experience {
@@ -207,9 +211,25 @@
     }
   }
 
+  @media screen and (max-width: 1023px) {
+    .hero {
+      height: clamp(332px, 40vw, 340px);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .hero {
+      height: clamp(304px, 60vw, 376px);
+    }
+  }
+
   @media screen and (max-width: 479px) {
     .top-content {
-      gap: var(--s-14);
+      gap: var(--s-7);
+    }
+
+    .hero {
+      height: clamp(264px, 72vw, 304px);
     }
 
     .work-experience__heading {
@@ -218,6 +238,11 @@
 
     .work-experience__date {
       margin-inline: 0;
+    }
+
+    .art-image {
+      width: 100%;
+      height: auto;
     }
   }
 }

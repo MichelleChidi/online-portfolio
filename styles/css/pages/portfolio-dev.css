@@ -11,8 +11,20 @@
     margin-block-end: var(--s-22);
   }
 
-  .about-design {
+  .about {
     max-width: 650px;
+  }
+
+  .inline-style {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: var(--s-2);
+    column-gap: var(--s-10);
+    margin-block-start: var(--s-3);
+  }
+
+  .mbs-1 {
+    margin-block-start: var(--s-1);
   }
 
   .section-title {
@@ -32,7 +44,9 @@
   }
 
   .work-experience__description {
-    margin-block-start: var(--s-10);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .work-experience__company {
@@ -50,22 +64,27 @@
     width: 320px;
   }
 
-  .work-experience__date {
-    margin-block-start: var(--s-1);
+  .work-experience__location {
+    display: flex;
+    align-items: center;
+    color: var(--color-text-light);
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .work-experience__icon {
+    margin-inline-end: var(--s-2);
   }
 
   .work-experience__details {
-    display: flex;
-    flex-direction: column;
-    gap: var(--s-1);
-    margin-block-start: var(--s-3);
+    margin-block-start: var(--s-8);
   }
 
   @media screen and (max-width: 1279px) {
     .top-content {
       align-items: center;
       flex-direction: column;
-      gap: var(--s-18);
+      gap: var(--s-22);
     }
 
     .work-experience__company {
@@ -106,7 +125,7 @@
       height: var(--s-50);
 
       img {
-        width: 100%;
+        max-width: 100%;
         height: auto;
       }
     }

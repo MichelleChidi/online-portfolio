@@ -14,6 +14,13 @@ async function loadPage(path) {
   const module = await loader();
   app.innerHTML = module.render();
 
+  if (module.description) {
+    const meta = document.createElement("meta");
+    meta.name = "description";
+    meta.content = module.description;
+    document.head.appendChild(meta);
+  }
+
   if (module.init) {
     module.init();
   }

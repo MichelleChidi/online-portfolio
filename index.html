@@ -4,9 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title id="page-title">Ellemanze | Portfolio</title>
-    <link rel="stylesheet" href="../styles/css/base.css" />
-    <link rel="stylesheet" href="../styles/css/partials/menu.css" />
-    <link rel="stylesheet" href="../styles/css/partials/mobile-menu.css" />
+    <link
+      rel="preload"
+      href="/styles/fonts/mogra/Mogra-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/styles/fonts/irish-grover/Irish-Grover-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/styles/fonts/ibm-plex-mono/IBMPlexMono-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/styles/css/base.css" />
+    <link
+      rel="stylesheet"
+      href="/styles/css/partials/menu.css"
+      media="(min-width: 1024px)"
+    />
+    <link
+      rel="stylesheet"
+      href="../styles/css/partials/mobile-menu.css"
+      media="(max-width: 1023px)"
+    />
     <link
       rel="icon"
       type="image/x-icon"
@@ -20,8 +49,8 @@
       <div id="mobile-menu"></div>
       <main id="app"></main>
     </div>
-    <script type="module" src="../js/partials/mobile-menu.js"></script>
-    <script type="module" src="../js/partials/menu.js"></script>
+    <script type="module" src="../js/partials/mobile-menu.js" defer></script>
+    <script type="module" src="../js/partials/menu.js" defer></script>
     <script type="module" src="/js/router.js"></script>
   </body>
 </html>

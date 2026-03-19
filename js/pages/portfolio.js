@@ -10,3 +10,6 @@ export async function init() {
   headerInit();
   contactInit();
 }
+
+export const description =
+  "UX/UI portfolio of Michelle Chidi-Njemanze. Two case  studies on design systems and website redesign are presented here";
