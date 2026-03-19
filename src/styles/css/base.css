@@ -142,7 +142,7 @@
 }
 
 html {
-  background-image: url(../../assets/images/texture-bkg.avif);
+  background-image: url(/public/images/texture-bkg.avif);
   background-repeat: repeat;
   font-size: clamp(20px, 1.1vw, 24px);
   height: 100%;

@@ -1,11 +1,6 @@
-fetch("../src/partials/mobile-menu.html")
-  .then((res) => res.text())
-  .then((html) => {
-    document.getElementById("mobile-menu").innerHTML = html;
-  })
-  .catch((err) => {
-    console.error("Failed to load menu:", err);
-  });
+import menuHtml from "../../partials/mobile-menu.html?raw";
+
+document.getElementById("mobile-menu").innerHTML = menuHtml;
 
 document.addEventListener("click", (e) => {
   const link = e.target.closest("button[data-nav-button]");
