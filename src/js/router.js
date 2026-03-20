@@ -28,6 +28,7 @@ async function loadPage(path) {
 
 function navigate(path) {
   history.pushState({}, "", path);
+  window.scrollTo({ top: 0, behavior: "smooth" });
   loadPage(path);
 }
 

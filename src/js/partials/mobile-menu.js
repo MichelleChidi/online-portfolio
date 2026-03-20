@@ -1,4 +1,5 @@
 import menuHtml from "../../partials/mobile-menu.html?raw";
+import "../../styles/css/partials/mobile-menu.css";
 
 document.getElementById("mobile-menu").innerHTML = menuHtml;
 

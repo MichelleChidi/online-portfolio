@@ -2,7 +2,7 @@
   background: var(--white);
   display: flex;
   height: 100%;
-  padding-inline-end: var(--s-4);
+  padding-inline-end: var(--s-1);
 
   .menu-tabs {
     li {
