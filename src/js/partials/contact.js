@@ -19,6 +19,7 @@ export function render() {
             <a
                 href="https://www.linkedin.com/in/michelle-chidi-njemanze"
                 class="contact-info"
+                target="_blank"
             >
             <img
                 class="contact-icon"
@@ -27,8 +28,8 @@ export function render() {
                 width="32"
                 alt=""
             />
-            <span>LinkedIn</span></a
-            >
+            LinkedIn
+            </a>
         </li>
         <li id="contact-link-cv">
             <a href="/images/downloads/cv.zip" class="contact-info" download="Michelle_Chidi-Njemanze_CV">
