@@ -142,7 +142,7 @@
 }
 
 html {
-  background-image: url(/public/images/texture-bkg.avif);
+  background-image: url(/images/texture-bkg.avif);
   background-repeat: repeat;
   font-size: clamp(20px, 1.1vw, 24px);
   height: 100%;
@@ -280,6 +280,10 @@ a[data-tooltip]:focus::after {
 
 .text-light {
   color: var(--color-text-light);
+}
+
+.text-link {
+  text-decoration: none;
 }
 
 .flex {

@@ -41,6 +41,7 @@
     display: grid;
     grid-template-columns: max-content 1fr;
     gap: 0.5rem 1.5rem;
+    max-width: 792px;
   }
 
   .case__details dt {
@@ -91,7 +92,8 @@
   .case__chapters {
     display: flex;
     flex-direction: column;
-    padding-block: var(--s-10);
+    padding-block-start: var(--s-10);
+    padding-block-end: var(--s-25);
     padding-inline: var(--s-13);
     gap: var(--s-25);
 
