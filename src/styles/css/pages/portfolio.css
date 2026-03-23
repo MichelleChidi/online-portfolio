@@ -99,7 +99,8 @@
     color: var(--color-text-light);
   }
 
-  .post-it:hover {
+  .post-it:hover,
+  .case-study-card__content:hover {
     .post-it-btn {
       gap: var(--s-8);
     }
