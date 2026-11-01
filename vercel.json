@@ -4,6 +4,16 @@
     {
       "source": "/cv/:path*",
       "destination": "/:path*"
-    }
+    },
+    { "source": "/portfolio", "destination": "/src/pages/portfolio.html" },
+    {
+      "source": "/website-redesign",
+      "destination": "/src/pages/case-studies/website-redesign.html"
+    },
+    {
+      "source": "/design-system",
+      "destination": "/src/pages/case-studies/design-system.html"
+    },
+    { "source": "/art-dabbles", "destination": "/src/pages/art-dabbles.html" }
   ]
 }
