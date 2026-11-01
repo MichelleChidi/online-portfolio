@@ -3,17 +3,27 @@
 
   <url>
     <loc>https://ellemanze.com/</loc>
-    <lastmod>2026-03-19</lastmod>
+    <lastmod>2026-11-01</lastmod>
   </url>
 
   <url>
-    <loc>https://ellemanze.com/portfolio</loc>
-    <lastmod>2026-03-19</lastmod>
+    <loc>https://ellemanze.com/src/pages/portfolio.html</loc>
+    <lastmod>2026-11-01</lastmod>
   </url>
 
   <url>
-    <loc>https://ellemanze.com/art-dabbles</loc>
-    <lastmod>2026-03-19</lastmod>
+    <loc>https://ellemanze.com/src/pages/case-studies/design-system.html</loc>
+    <lastmod>2026-11-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://ellemanze.com/src/pages/case-studies/website-redesign.html</loc>
+    <lastmod>2026-11-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://ellemanze.com/src/pages/art-dabbles.html</loc>
+    <lastmod>2026-11-01</lastmod>
   </url>
 
 </urlset>

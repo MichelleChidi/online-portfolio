@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://ellemanze.com/sitemap.xml
+Sitemap: https://www.ellemanze.com/sitemap.xml
